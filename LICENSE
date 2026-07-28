@@ -1,0 +1,38 @@
+Isles of Avalon — Public Repository License and Notice
+
+Copyright (c) Warpath Studios. All rights reserved.
+
+This repository contains public-facing text, documentation, branding materials,
+and community assets related to Isles of Avalon ("the Game"). It does NOT
+contain the Game's source code, engine project, plugins, or proprietary
+assets, all of which remain private and proprietary to Warpath Studios.
+
+ALL RIGHTS RESERVED
+
+Unless otherwise explicitly stated in a specific file or directory, all
+content in this repository — including but not limited to text, documentation,
+names, logos, and branding — is the property of Warpath Studios and is
+protected by copyright and other applicable laws.
+
+No license, express or implied, is granted to copy, modify, distribute,
+sublicense, or create derivative works from any content in this repository,
+except:
+
+  1. As necessary to fork or reference this repository for the sole purpose
+     of submitting corrections or contributions back to Warpath Studios via
+     pull request, in accordance with CONTRIBUTING.md; or
+  2. As explicitly permitted in writing by Warpath Studios.
+
+This is NOT an open-source software license. No portion of this notice
+grants rights to the Isles of Avalon game itself, its source code, or any
+assets not contained in this repository.
+
+THIRD-PARTY MATERIALS
+
+If third-party materials (e.g. fonts, icons, sample content) are added to
+this repository in the future, they will be clearly identified and will
+remain subject to their own respective licenses, which will be documented
+in the relevant subdirectory or file.
+
+For licensing inquiries, contact Warpath Studios through the official
+channels listed in README.md.
