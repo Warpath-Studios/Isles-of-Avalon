@@ -1,0 +1,80 @@
+name: Bug Report
+description: Report a bug you've encountered while playing Isles of Avalon.
+title: "[Bug]: "
+labels: ["bug", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug!
+
+        **Please do not include passwords, authentication tokens, private server keys, or other people's personal information anywhere in this report.** If your bug involves a security issue, exploit, or duplication bug, please follow our [Security Policy](../../SECURITY.md) instead of filing a public issue.
+
+  - type: input
+    id: game-version
+    attributes:
+      label: Game Version
+      description: The version of Isles of Avalon you were playing (found in the main menu or launcher).
+      placeholder: "e.g. 0.4.2"
+    validations:
+      required: true
+
+  - type: textarea
+    id: repro-steps
+    attributes:
+      label: Steps to Reproduce
+      description: List the exact steps that lead to the bug.
+      placeholder: |
+        1. ...
+        2. ...
+        3. ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: Expected Behavior
+      description: What did you expect to happen?
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual-behavior
+    attributes:
+      label: Actual Behavior
+      description: What actually happened?
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs (if relevant)
+      description: Paste any relevant log output. Please redact any tokens, keys, IP addresses, or personal information before posting.
+      render: shell
+    validations:
+      required: false
+
+  - type: textarea
+    id: system-info
+    attributes:
+      label: System Information
+      description: Platform, OS, and any other relevant hardware/software details.
+      placeholder: |
+        - Platform: Steam / Epic / other
+        - OS: Windows 11 / macOS / Linux
+        - GPU:
+        - Single player or multiplayer (dedicated server / hosted):
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Confirmation
+      options:
+        - label: I have not included any passwords, tokens, server keys, or other people's personal information in this report.
+          required: true
+        - label: This is not a security vulnerability, exploit, or duplication bug (those should go through the Security Policy instead).
+          required: true
