@@ -1,0 +1,60 @@
+name: Feature Request
+description: Suggest an idea or improvement for Isles of Avalon.
+title: "[Feature]: "
+labels: ["enhancement", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for the suggestion! Please note that feature requests are reviewed periodically and not every request will be implemented — this helps us track community interest and ideas.
+
+        **Please do not include passwords, authentication tokens, private server keys, or other people's personal information anywhere in this request.**
+
+  - type: input
+    id: game-version
+    attributes:
+      label: Game Version
+      description: The version of Isles of Avalon you're currently playing, if relevant to your suggestion.
+      placeholder: "e.g. 0.4.2"
+    validations:
+      required: false
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: A short summary of the feature or improvement you'd like to see.
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or Motivation
+      description: What problem does this solve, or what would this improve about the game?
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed Solution
+      description: Describe how you imagine this working, if you have ideas.
+    validations:
+      required: false
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives Considered
+      description: Any alternative approaches you've thought about.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Confirmation
+      options:
+        - label: I have not included any passwords, tokens, server keys, or other people's personal information in this request.
+          required: true
