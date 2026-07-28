@@ -1,0 +1,90 @@
+name: Dedicated Server Issue
+description: Report a problem specific to running or connecting to a dedicated server.
+title: "[Server]: "
+labels: ["server", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this template for issues related to hosting or connecting to dedicated servers (crashes, performance, connectivity, desync, etc.).
+
+        **Please do not include passwords, authentication tokens, private server keys, admin credentials, or other people's personal information anywhere in this report.** If this is a server vulnerability or exploit, please follow our [Security Policy](../../SECURITY.md) instead of filing a public issue.
+
+  - type: input
+    id: game-version
+    attributes:
+      label: Game Version
+      description: The version of Isles of Avalon the server and client(s) were running.
+      placeholder: "e.g. 0.4.2"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: server-type
+    attributes:
+      label: Server Type
+      options:
+        - Self-hosted dedicated server
+        - Rented/third-party hosting
+        - Official server (if applicable)
+        - Not sure
+    validations:
+      required: true
+
+  - type: textarea
+    id: repro-steps
+    attributes:
+      label: Steps to Reproduce
+      description: List the exact steps that lead to the issue.
+      placeholder: |
+        1. ...
+        2. ...
+        3. ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: Expected Behavior
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual-behavior
+    attributes:
+      label: Actual Behavior
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Server / Client Logs (if relevant)
+      description: Paste relevant log output. Please redact IP addresses, tokens, admin keys, and any personal information before posting.
+      render: shell
+    validations:
+      required: false
+
+  - type: textarea
+    id: system-info
+    attributes:
+      label: System Information
+      description: Server and client platform/OS details, player count at time of issue, and network setup if relevant.
+      placeholder: |
+        - Server OS:
+        - Server host (self-hosted / provider name, no account details):
+        - Player count at time of issue:
+        - Client platform(s):
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Confirmation
+      options:
+        - label: I have not included any passwords, tokens, admin/server keys, or other people's personal information in this report.
+          required: true
+        - label: This is not a security vulnerability or exploit (those should go through the Security Policy instead).
+          required: true
