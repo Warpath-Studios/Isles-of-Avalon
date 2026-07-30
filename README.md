@@ -6,8 +6,8 @@ The game is currently **in active development**. Features described in this repo
 
 ## Links
 
-- Official website: _placeholder — link coming soon_
-- Discord: _placeholder — link coming soon_
+- Official website: (https://islesofavalon.com/)
+- Discord: (https://discord.gg/Paq76e5wgf)
 - Steam page: _placeholder — link coming soon_
 - Support: _placeholder — link coming soon_
 - Documentation: see [`docs/`](docs/README.md) in this repository
